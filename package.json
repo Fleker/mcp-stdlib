@@ -1,0 +1,21 @@
+{
+  "name": "@fleker/mcp-stdlib",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "execute": "tsc && node dist/index.js",
+    "start": "tsc && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick FElker",
+  "license": "Apache-2.0",
+  "description": "",
+  "dependencies": {
+    "fastmcp": "^3.22.0",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1"
+  }
+}
