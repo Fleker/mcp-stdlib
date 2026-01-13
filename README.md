@@ -10,12 +10,9 @@ You can add this MCP server by:
 
 ```json
 "mcpServers": {
-  "felker-mcp": {
-    "httpUrl": "http://127.0.0.1:8080/mcp",
-    "headers": {
-      "feedly_access_token": "<access-token-for-feedly>",
-      "feedly_user_id": "<user-id-for-feedly>"
-    }
+  "mcp-stdlib": {
+    "command": "npx",
+    "args": ["@fleker/mcp-stdlib@latest"]
   }
 }
 ```
@@ -29,8 +26,11 @@ It will compile and run the tools on port `8080`.
 
 You can also go into `src/index.ts` to comment/remove any tools you don't want to run.
 
-## Tools
+## Debugging
 
-### Feedly
-
-In order for the Feedly tool to actually work, you'll need to add these fields to the `settings.json` file. If you don't, then it won't be possible to fetch your data. Other tools will work fine.
+```json
+  "mcp stdlib": {
+    "command": "node",
+    "args": ["/mnt/c/Users/handn/Development/mcp-stdlib/dist/index.js"]
+  }
+```

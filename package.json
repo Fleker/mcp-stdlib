@@ -1,16 +1,21 @@
 {
   "name": "@fleker/mcp-stdlib",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "main": "dist/index.js",
+  "bin": {
+    "@fleker/mcp-stdlib": "dist/index.js",
+    "mcp-stdlib": "dist/index.js"
+  },
+  "files": ["dist"],
   "scripts": {
     "build": "tsc",
     "execute": "tsc && node dist/index.js",
     "start": "tsc && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Nick FElker",
+  "author": "Nick Felker",
   "license": "Apache-2.0",
-  "description": "",
+  "description": "Standard library of tools that can run in MCP",
   "dependencies": {
     "fastmcp": "^3.22.0",
     "typescript": "^5.9.3"
