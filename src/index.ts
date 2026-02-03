@@ -4,6 +4,7 @@ import { FastMCP } from "fastmcp";
 import getMathComparisonTool from "./math/get-math-comparison";
 import getLetterCountTool from "./strings/get-letter-count";
 import wordCounter from "./strings/word-counter";
+import now from "./time/now";
 
 const server = new FastMCP({
   name: "MCP stdlib",
@@ -13,6 +14,7 @@ const server = new FastMCP({
 server.addTool(getLetterCountTool)
 server.addTool(getMathComparisonTool)
 server.addTool(wordCounter)
+server.addTool(now)
 
 server.start({
   transportType: "stdio",
